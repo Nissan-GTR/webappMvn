@@ -3,6 +3,7 @@ version: 0.2
 phases:
   post_build:
     commands:
+      - echo "Starting GTR--- MVN Install"
       - mvn install
 artifacts:
   files:
