@@ -4,8 +4,8 @@ phases:
   post_build:
     commands:
       - echo "Starting GTR--- MVN Install"
-      - mvn install
+      - mvn package
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'target/oakleaf-webapp'
+    - '**/*.war'
+  base-directory: 'target'
